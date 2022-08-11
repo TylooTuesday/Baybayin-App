@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.CameraPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand" Margin="20">
+                <Image VerticalOptions="StartAndExpand" x:Name="imgView"/>
+                <Label Text="Panuto:"
+                       x:Name="txtPanutoTitle"
+                       HorizontalOptions="Start"
+                       VerticalOptions="CenterAndExpand"
+                       FontAttributes="Bold"
+                       FontSize="35"/>
+                <Label Text="   Maari lamang itapat ang kamera sa Baybayin Script at kuhanan ng litrato upang Maisalin ito sa Tagalog."
+                       x:Name="txtPanuto"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center"
+                       FontSize="27"/>
+                <Label x:Name="txtResult"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="20"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" Spacing="2" Padding="6">
+                <ImageButton Source="{AppThemeBinding Light=btnCamL, Dark=btnCamD}" BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}" HeightRequest="60" HorizontalOptions="CenterAndExpand" Clicked="CaptureImage" Margin="40"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

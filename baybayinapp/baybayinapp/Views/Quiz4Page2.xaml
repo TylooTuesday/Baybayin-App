@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz4Page2"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Pagsusulit 4"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       II. Pagsusulat ng Baybayin"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Isulat sa wastong Baybayin ang mga sumusunod na parirala."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="11. Ay! Kalbo!"
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="q11Verdict"
+                           FontSize="15"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Margin="0, 0, 20, 0"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Fill">
+                    <Label
+                        Text="Magsulat dito..."
+                        TextColor="#7f7f7f"
+                        FontAttributes="Italic"
+                        x:Name="q11"
+                        FontSize="25"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Fill">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding a8q11Active}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Rectangle
+                        BackgroundColor="{AppThemeBinding Light={StaticResource AccentL}, Dark={StaticResource AccentD}}"
+                        HorizontalOptions="Fill"
+                        HeightRequest="2"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout HorizontalOptions="CenterAndExpand" x:Name="k1">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜀ" Command="{Binding a8q11Type}" CommandParameter="ᜀ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜁ" Command="{Binding a8q11Type}" CommandParameter="ᜁ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜂ" Command="{Binding a8q11Type}" CommandParameter="ᜂ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜒ" FontSize="20" Command="{Binding a8q11Type}" CommandParameter="ᜒ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜓ" FontSize="20" Command="{Binding a8q11Type}" CommandParameter="ᜓ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="+" Command="{Binding a8q11Type}" CommandParameter="᜔" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="᜶" Command="{Binding a8q11Type}" CommandParameter="᜶" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜊ" Command="{Binding a8q11Type}" CommandParameter="ᜊ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜃ" Command="{Binding a8q11Type}" CommandParameter="ᜃ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜇ" Command="{Binding a8q11Type}" CommandParameter="ᜇ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜄ" Command="{Binding a8q11Type}" CommandParameter="ᜄ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜑ" Command="{Binding a8q11Type}" CommandParameter="ᜑ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜎ" Command="{Binding a8q11Type}" CommandParameter="ᜎ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜋ" Command="{Binding a8q11Type}" CommandParameter="ᜋ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜈ" Command="{Binding a8q11Type}" CommandParameter="ᜈ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜅ" Command="{Binding a8q11Type}" CommandParameter="ᜅ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜉ" Command="{Binding a8q11Type}" CommandParameter="ᜉ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜐ" Command="{Binding a8q11Type}" CommandParameter="ᜐ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜆ" Command="{Binding a8q11Type}" CommandParameter="ᜆ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜏ" Command="{Binding a8q11Type}" CommandParameter="ᜏ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜌ" Command="{Binding a8q11Type}" CommandParameter="ᜌ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="C" Command="{Binding a8q11Clear}" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="______" Command="{Binding a8q11Type}" CommandParameter=" " WidthRequest="200"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="DEL" Clicked="q11Back" WidthRequest="60"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="12. Kapag hindi mo nakita makikita mo!"
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="q12Verdict"
+                           FontSize="15"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Margin="0, 0, 20, 0"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Fill">
+                    <Label
+                        Text="Magsulat dito..."
+                        TextColor="#7f7f7f"
+                        FontAttributes="Italic"
+                        x:Name="q12"
+                        FontSize="25"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Fill">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding a8q12Active}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Rectangle
+                        BackgroundColor="{AppThemeBinding Light={StaticResource AccentL}, Dark={StaticResource AccentD}}"
+                        HorizontalOptions="Fill"
+                        HeightRequest="2"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout HorizontalOptions="CenterAndExpand" x:Name="k2">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜀ" Command="{Binding a8q12Type}" CommandParameter="ᜀ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜁ" Command="{Binding a8q12Type}" CommandParameter="ᜁ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜂ" Command="{Binding a8q12Type}" CommandParameter="ᜂ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜒ" FontSize="20" Command="{Binding a8q12Type}" CommandParameter="ᜒ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜓ" FontSize="20" Command="{Binding a8q12Type}" CommandParameter="ᜓ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="+" Command="{Binding a8q12Type}" CommandParameter="᜔" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="᜶" Command="{Binding a8q12Type}" CommandParameter="᜶" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜊ" Command="{Binding a8q12Type}" CommandParameter="ᜊ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜃ" Command="{Binding a8q12Type}" CommandParameter="ᜃ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜇ" Command="{Binding a8q12Type}" CommandParameter="ᜇ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜄ" Command="{Binding a8q12Type}" CommandParameter="ᜄ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜑ" Command="{Binding a8q12Type}" CommandParameter="ᜑ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜎ" Command="{Binding a8q12Type}" CommandParameter="ᜎ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜋ" Command="{Binding a8q12Type}" CommandParameter="ᜋ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜈ" Command="{Binding a8q12Type}" CommandParameter="ᜈ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜅ" Command="{Binding a8q12Type}" CommandParameter="ᜅ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜉ" Command="{Binding a8q12Type}" CommandParameter="ᜉ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜐ" Command="{Binding a8q12Type}" CommandParameter="ᜐ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜆ" Command="{Binding a8q12Type}" CommandParameter="ᜆ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜏ" Command="{Binding a8q12Type}" CommandParameter="ᜏ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜌ" Command="{Binding a8q12Type}" CommandParameter="ᜌ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="C" Command="{Binding a8q12Clear}" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="______" Command="{Binding a8q12Type}" CommandParameter=" " WidthRequest="200"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="DEL" Clicked="q12Back" WidthRequest="60"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="13. Hiyang-hiya naman ako."
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="q13Verdict"
+                           FontSize="15"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Margin="0, 0, 20, 0"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Fill">
+                    <Label
+                        Text="Magsulat dito..."
+                        TextColor="#7f7f7f"
+                        FontAttributes="Italic"
+                        x:Name="q13"
+                        FontSize="25"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Fill">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding a8q13Active}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Rectangle
+                        BackgroundColor="{AppThemeBinding Light={StaticResource AccentL}, Dark={StaticResource AccentD}}"
+                        HorizontalOptions="Fill"
+                        HeightRequest="2"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout HorizontalOptions="CenterAndExpand" x:Name="k3">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜀ" Command="{Binding a8q13Type}" CommandParameter="ᜀ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜁ" Command="{Binding a8q13Type}" CommandParameter="ᜁ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜂ" Command="{Binding a8q13Type}" CommandParameter="ᜂ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜒ" FontSize="20" Command="{Binding a8q13Type}" CommandParameter="ᜒ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜓ" FontSize="20" Command="{Binding a8q13Type}" CommandParameter="ᜓ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="+" Command="{Binding a8q13Type}" CommandParameter="᜔" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="᜶" Command="{Binding a8q13Type}" CommandParameter="᜶" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜊ" Command="{Binding a8q13Type}" CommandParameter="ᜊ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜃ" Command="{Binding a8q13Type}" CommandParameter="ᜃ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜇ" Command="{Binding a8q13Type}" CommandParameter="ᜇ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜄ" Command="{Binding a8q13Type}" CommandParameter="ᜄ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜑ" Command="{Binding a8q13Type}" CommandParameter="ᜑ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜎ" Command="{Binding a8q13Type}" CommandParameter="ᜎ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜋ" Command="{Binding a8q13Type}" CommandParameter="ᜋ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜈ" Command="{Binding a8q13Type}" CommandParameter="ᜈ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜅ" Command="{Binding a8q13Type}" CommandParameter="ᜅ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜉ" Command="{Binding a8q13Type}" CommandParameter="ᜉ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜐ" Command="{Binding a8q13Type}" CommandParameter="ᜐ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜆ" Command="{Binding a8q13Type}" CommandParameter="ᜆ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜏ" Command="{Binding a8q13Type}" CommandParameter="ᜏ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜌ" Command="{Binding a8q13Type}" CommandParameter="ᜌ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="C" Command="{Binding a8q13Clear}" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="______" Command="{Binding a8q13Type}" CommandParameter=" " WidthRequest="200"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="DEL" Clicked="q13Back" WidthRequest="60"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="14. Huwag ka mawawalan ng pag-asa."
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="q14Verdict"
+                           FontSize="15"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Margin="0, 0, 20, 0"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Fill">
+                    <Label
+                        Text="Magsulat dito..."
+                        TextColor="#7f7f7f"
+                        FontAttributes="Italic"
+                        x:Name="q14"
+                        FontSize="25"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Fill">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding a8q14Active}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Rectangle
+                        BackgroundColor="{AppThemeBinding Light={StaticResource AccentL}, Dark={StaticResource AccentD}}"
+                        HorizontalOptions="Fill"
+                        HeightRequest="2"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout HorizontalOptions="CenterAndExpand" x:Name="k4">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜀ" Command="{Binding a8q14Type}" CommandParameter="ᜀ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜁ" Command="{Binding a8q14Type}" CommandParameter="ᜁ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜂ" Command="{Binding a8q14Type}" CommandParameter="ᜂ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜒ" FontSize="20" Command="{Binding a8q14Type}" CommandParameter="ᜒ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜓ" FontSize="20" Command="{Binding a8q14Type}" CommandParameter="ᜓ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="+" Command="{Binding a8q14Type}" CommandParameter="᜔" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="᜶" Command="{Binding a8q14Type}" CommandParameter="᜶" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜊ" Command="{Binding a8q14Type}" CommandParameter="ᜊ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜃ" Command="{Binding a8q14Type}" CommandParameter="ᜃ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜇ" Command="{Binding a8q14Type}" CommandParameter="ᜇ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜄ" Command="{Binding a8q14Type}" CommandParameter="ᜄ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜑ" Command="{Binding a8q14Type}" CommandParameter="ᜑ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜎ" Command="{Binding a8q14Type}" CommandParameter="ᜎ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜋ" Command="{Binding a8q14Type}" CommandParameter="ᜋ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜈ" Command="{Binding a8q14Type}" CommandParameter="ᜈ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜅ" Command="{Binding a8q14Type}" CommandParameter="ᜅ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜉ" Command="{Binding a8q14Type}" CommandParameter="ᜉ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜐ" Command="{Binding a8q14Type}" CommandParameter="ᜐ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜆ" Command="{Binding a8q14Type}" CommandParameter="ᜆ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜏ" Command="{Binding a8q14Type}" CommandParameter="ᜏ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜌ" Command="{Binding a8q14Type}" CommandParameter="ᜌ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="C" Command="{Binding a8q14Clear}" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="______" Command="{Binding a8q14Type}" CommandParameter=" " WidthRequest="200"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="DEL" Clicked="q14Back" WidthRequest="60"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="15. Sayang lang ang oras ko sa iyo!"
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="q15Verdict"
+                           FontSize="15"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Margin="0, 0, 20, 0"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Fill">
+                    <Label
+                        Text="Magsulat dito..."
+                        TextColor="#7f7f7f"
+                        FontAttributes="Italic"
+                        x:Name="q15"
+                        FontSize="25"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Fill">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding a8q15Active}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Rectangle
+                        BackgroundColor="{AppThemeBinding Light={StaticResource AccentL}, Dark={StaticResource AccentD}}"
+                        HorizontalOptions="Fill"
+                        HeightRequest="2"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout HorizontalOptions="CenterAndExpand" x:Name="k5">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜀ" Command="{Binding a8q15Type}" CommandParameter="ᜀ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜁ" Command="{Binding a8q15Type}" CommandParameter="ᜁ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜂ" Command="{Binding a8q15Type}" CommandParameter="ᜂ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜒ" FontSize="20" Command="{Binding a8q15Type}" CommandParameter="ᜒ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜓ" FontSize="20" Command="{Binding a8q15Type}" CommandParameter="ᜓ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="+" Command="{Binding a8q15Type}" CommandParameter="᜔" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="᜶" Command="{Binding a8q15Type}" CommandParameter="᜶" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜊ" Command="{Binding a8q15Type}" CommandParameter="ᜊ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜃ" Command="{Binding a8q15Type}" CommandParameter="ᜃ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜇ" Command="{Binding a8q15Type}" CommandParameter="ᜇ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜄ" Command="{Binding a8q15Type}" CommandParameter="ᜄ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜑ" Command="{Binding a8q15Type}" CommandParameter="ᜑ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜎ" Command="{Binding a8q15Type}" CommandParameter="ᜎ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜋ" Command="{Binding a8q15Type}" CommandParameter="ᜋ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜈ" Command="{Binding a8q15Type}" CommandParameter="ᜈ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜅ" Command="{Binding a8q15Type}" CommandParameter="ᜅ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜉ" Command="{Binding a8q15Type}" CommandParameter="ᜉ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜐ" Command="{Binding a8q15Type}" CommandParameter="ᜐ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜆ" Command="{Binding a8q15Type}" CommandParameter="ᜆ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜏ" Command="{Binding a8q15Type}" CommandParameter="ᜏ" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="ᜌ" Command="{Binding a8q15Type}" CommandParameter="ᜌ" WidthRequest="40"/>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Button VerticalOptions="CenterAndExpand" Text="C" Command="{Binding a8q15Clear}" WidthRequest="40"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="______" Command="{Binding a8q15Type}" CommandParameter=" " WidthRequest="200"/>
+                        <Button VerticalOptions="CenterAndExpand" Text="DEL" Clicked="q15Back" WidthRequest="60"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyL, Dark=btnMagpatuloyD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+                <ImageButton Source="{AppThemeBinding Light=btnBumalikL, Dark=btnBumalikD}" VerticalOptions="CenterAndExpand" Clicked="BackClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

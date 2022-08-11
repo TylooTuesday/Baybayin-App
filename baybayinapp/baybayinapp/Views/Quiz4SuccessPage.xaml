@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz4SuccessPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="40, 40, 40, 20">
+                <Image Source="imgGHat.png" VerticalOptions="Start" Margin="20, 0, 20, 0"/>
+                <Label Text=""
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontSize="40"
+                    x:Name="lblScore"/>
+                <Label Text="Pasado ang iyong nakuhang marka!"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontSize="25"/>
+                <Label Text="Pagbati dahil iyong natapos ang buong pag-aaral ng baybayin."
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                       FontSize="18"/>
+                <Label Text="Maaari mong balikan ang iyong mga natapos na aralin, gawain, at pagsusulit."
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                       FontSize="18"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 0, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMatutoL, Dark=btnMatutoD}" VerticalOptions="End" Clicked="RepeatClicked" Margin="0, 0, 0, 5"/>
+                <ImageButton Source="{AppThemeBinding Light=btnBumalikL, Dark=btnBumalikD}" VerticalOptions="End" Clicked="BackClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

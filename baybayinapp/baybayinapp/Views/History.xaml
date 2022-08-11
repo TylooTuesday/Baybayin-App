@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.History"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Image Source="{AppThemeBinding Light=imgKasaysayanL.png, Dark=imgKasaysayanD}" VerticalOptions="Start" Margin="0, 20"/>
+            </StackLayout>
+            <StackLayout Margin="10, 5" Padding="10">
+                <StackLayout>
+                    <Label Text="•	300 B.C."
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Ang mga sinaunang komunidad ay bumuo na ng paraan ng pagsulat noong 300 BC, na may pagpapakilala ng mga iskriptong ng Brahmic bilang ninuno ng Baybayin."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img300BC.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Ang kawi ay pangunahing matatagpuan sa Java at ginamit sa halos lahat ng Maritime Southeast Asia sa pagitan ng ika-8 siglo at ika-16 na siglo."
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	14th Century A.D."
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Ang pagguhit ng Baybayin, ang kaligrapiya ekspresyon na ito ay naimpluwensyahan ng pag-unlad ng maraming maliliit na Tsino sa buong isla na pagkalantad sa mga iskripto at kaligrapiya. Ang kaligrapiya aplikasyon na ito ng Baybayin ay humahantong sa pag-unlad nito sa isang napaka-kurtina form, tulad ng makikita sa luzon at Visayan script."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1565"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Tinangka ng mga iskolar at priest na idokumento at ingatan ang mga iskrip ng Baybayin bilang paraan ng ebalwasyon."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1580"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Ang unang opisyal na pag-aaral ng baybayin ay inimbestigahan ni Fr. Martin de Rada."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1580.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Fr. Nartin de Rada"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1590"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Mga sinaunang pamamaraan ng pagsulat tulad ng mga bagay na dahon, palapa, saha, banakal at balat ng iba't ibang prutas, ngunit karaniwan ang kawayan. Ang mga panulat naman ay matutulis na patalim o sundang, o ibang maliliit na piraso ng bakal."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1590_1.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Image Source="img1590_2.png" VerticalOptions="Start"/>
+                        <Label Text="Ang lalaking Hanunoo na taga mindoro na gumagamit ng piraso ng kawayan upang makapag sulat ng Baybayin"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1593"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Sinimulan ni Fr. Juan de Plasencia ang sarili niyang pagsasaliksik na humahantong sa 'Doctrina Christiana', isang aklat ng mga panalanging nakasulat sa baybayin."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1593_2.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Doctrina Christiana"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1593_1.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Fr. Juan de Plasencia"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1620"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Sabat (+) idinagdag ni Francisco Lopez noong 1620 at diyan din nagsimula ang paggamit ng Virama."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1620.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Sabat at Virama"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1896"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Sa huling bahagi ng ika-20 siglo hanggang sa kasalukuyang panahon, ang Baybayin ay sumasabay sa isang bagong alon ng katanyagan bilang isang pagpapahayag ng pambansang pagkakalilanlan."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1896.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Watawat ng Katipunan - Magdalo Faction"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1914"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Sinawali (x) o Kali nagsimula sa panukala ni Ginoong Norberto Romualdez para sa baybay ng Tagbanwa noong 1914. Ibinase sa magkalihis na sandata."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1914.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Ginoong Noberto Romualdez"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="•	1950"
+                           FontSize="30"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource AccentD}}" Padding="10">
+                        <Label Text="Pamudpod (   ᜴ ) Ipinakilala naman ng isang Dutch Antrophologogist na si Anton Postma sa Hanunuo Mangyan skripto noong 1950."
+                               FontSize="18"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1950_2.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Sabat, Virama, at Pamudpod"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                        <Image Source="img1950_1.png" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                        <Label Text="Anton Postma"
+                               FontAttributes="Italic"
+                               FontSize="15"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 20"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Sangunian:"
+                           FontSize="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <Label Text="Lakan, John Paul (2013) Lakan The Baybayin: Musings on a Forgotten History "
+                           FontAttributes="Italic"
+                           TextDecorations="Underline"
+                           FontSize="15"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GotoLink"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

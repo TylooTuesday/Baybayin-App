@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Activity1SuccessPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="40">
+                <Image Source="imgCheck.png" VerticalOptions="Start" Margin="20"/>
+                <Label Text="Tama lahat ng iyong sagot!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"/>
+                <Label Text="Ikaw ay maaari nang magpatuloy sa susunod na aralin."
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20">
+                <ImageButton Source="{AppThemeBinding Light=btnAralin2L, Dark=btnAralin2D}" VerticalOptions="CenterAndExpand" Clicked="Lesson2Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton Source="{AppThemeBinding Light=btnBumalikL, Dark=btnBumalikD}" VerticalOptions="CenterAndExpand" Clicked="BackClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

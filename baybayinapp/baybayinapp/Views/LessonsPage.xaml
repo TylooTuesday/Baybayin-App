@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.LessonsPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Image Source="{AppThemeBinding Light=imgAralinL, Dark=imgAralinD}" VerticalOptions="Start" Margin="0, 20"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20">
+                <ImageButton x:Name="L1" Source="{AppThemeBinding Light=btnAralin1L, Dark=btnAralin1D}" VerticalOptions="CenterAndExpand" Clicked="Lesson1Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L2" Source="btnAralin2G" VerticalOptions="CenterAndExpand" Clicked="Lesson2Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L3" Source="btnAralin3G" VerticalOptions="CenterAndExpand" Clicked="Lesson3Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L4" Source="btnAralin4G" VerticalOptions="CenterAndExpand" Clicked="Lesson4Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L5" Source="btnAralin5G" VerticalOptions="CenterAndExpand" Clicked="Lesson5Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L6" Source="btnAralin6G" VerticalOptions="CenterAndExpand" Clicked="Lesson6Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L7" Source="btnAralin7G" VerticalOptions="CenterAndExpand" Clicked="Lesson7Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L8" Source="btnAralin8G" VerticalOptions="CenterAndExpand" Clicked="Lesson8Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L9" Source="btnAralin9G" VerticalOptions="CenterAndExpand" Clicked="Lesson9Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L10" Source="btnAralin10G" VerticalOptions="CenterAndExpand" Clicked="Lesson10Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L11" Source="btnAralin11G" VerticalOptions="CenterAndExpand" Clicked="Lesson11Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="L12" Source="btnAralin12G" VerticalOptions="CenterAndExpand" Clicked="Lesson12Clicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="baybayinapp.Views.Activity2Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Gawain 2: Mga Kudlit"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Isalin at iguhit sa baybayin ang mga sumusunod na titik"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1." 
+                           FontSize="18"
+                           VerticalOptions="End"
+                           Margin="0, 0, 0, 10"/>
+                        <Label Text="Ge / Gi" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Label Text="Iguhit sa loob ng parisukat..."
+                           HorizontalOptions="End"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL1}, Dark={StaticResource ThemeD1}}" Padding="2">
+                        <forms:SignaturePadView x:Name="q1"
+                                PromptText=""
+                                CaptionText=""
+                                ClearText=""
+                                StrokeColor="Gray"
+                                BackgroundColor="Black"
+                                SignatureLineWidth="0"
+                                StrokeWidth="3"
+                                WidthRequest="200"
+                                HeightRequest="200"
+                                VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Image Source="{AppThemeBinding Light=TraceGIL, Dark=TraceGID}" HeightRequest="200"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="q1Output"
+                               Text=""
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="q1Verdict"
+                               Text=""
+                               HorizontalOptions="End"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Button Text="Ipasa"
+                            Clicked="q1Submit"/>
+                        <Button Text="Burahin"
+                            Clicked="q1Clear"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2." 
+                           FontSize="18"
+                           VerticalOptions="End"
+                           Margin="0, 0, 0, 10"/>
+                        <Label Text="Po / Pu" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Label Text="Iguhit sa loob ng parisukat..."
+                           HorizontalOptions="End"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL1}, Dark={StaticResource ThemeD1}}" Padding="2">
+                        <forms:SignaturePadView x:Name="q2"
+                                PromptText=""
+                                CaptionText=""
+                                ClearText=""
+                                StrokeColor="Gray"
+                                BackgroundColor="Black"
+                                SignatureLineWidth="0"
+                                StrokeWidth="3"
+                                WidthRequest="200"
+                                HeightRequest="200"
+                                VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Image Source="{AppThemeBinding Light=TracePUL, Dark=TracePUD}" HeightRequest="200"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="q2Output"
+                               Text=""
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="q2Verdict"
+                               Text=""
+                               HorizontalOptions="End"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Button Text="Ipasa"
+                            Clicked="q2Submit"/>
+                        <Button Text="Burahin"
+                            Clicked="q2Clear"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3." 
+                           FontSize="18"
+                           VerticalOptions="End"
+                           Margin="0, 0, 0, 10"/>
+                        <Label Text="So / Su"
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Label Text="Iguhit sa loob ng parisukat..."
+                           HorizontalOptions="End"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL1}, Dark={StaticResource ThemeD1}}" Padding="2">
+                        <forms:SignaturePadView x:Name="q3"
+                                PromptText=""
+                                CaptionText=""
+                                ClearText=""
+                                StrokeColor="Gray"
+                                BackgroundColor="Black"
+                                SignatureLineWidth="0"
+                                StrokeWidth="3"
+                                WidthRequest="200"
+                                HeightRequest="200"
+                                VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Image Source="{AppThemeBinding Light=TraceSUL, Dark=TraceSUD}" HeightRequest="200"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="q3Output"
+                               Text=""
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="q3Verdict"
+                               Text=""
+                               HorizontalOptions="End"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Button Text="Ipasa"
+                            Clicked="q3Submit"/>
+                        <Button Text="Burahin"
+                            Clicked="q3Clear"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4." 
+                           FontSize="18"
+                           VerticalOptions="End"
+                           Margin="0, 0, 0, 10"/>
+                        <Label Text="Te / Ti"
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Label Text="Iguhit sa loob ng parisukat..."
+                           HorizontalOptions="End"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL1}, Dark={StaticResource ThemeD1}}" Padding="2">
+                        <forms:SignaturePadView x:Name="q4"
+                                PromptText=""
+                                CaptionText=""
+                                ClearText=""
+                                StrokeColor="Gray"
+                                BackgroundColor="Black"
+                                SignatureLineWidth="0"
+                                StrokeWidth="3"
+                                WidthRequest="200"
+                                HeightRequest="200"
+                                VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Image Source="{AppThemeBinding Light=TraceTIL, Dark=TraceTID}" HeightRequest="200"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="q4Output"
+                               Text=""
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="q4Verdict"
+                               Text=""
+                               HorizontalOptions="End"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Button Text="Ipasa"
+                            Clicked="q4Submit"/>
+                        <Button Text="Burahin"
+                            Clicked="q4Clear"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5." 
+                           FontSize="18"
+                           VerticalOptions="End"
+                           Margin="0, 0, 0, 10"/>
+                        <Label Text="We / Wi" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Label Text="Iguhit sa loob ng parisukat..."
+                           HorizontalOptions="End"/>
+                    <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL1}, Dark={StaticResource ThemeD1}}" Padding="2">
+                        <forms:SignaturePadView x:Name="q5"
+                                PromptText=""
+                                CaptionText=""
+                                ClearText=""
+                                StrokeColor="Gray"
+                                BackgroundColor="Black"
+                                SignatureLineWidth="0"
+                                StrokeWidth="3"
+                                WidthRequest="200"
+                                HeightRequest="200"
+                                VerticalOptions="Start"/>
+                    </StackLayout>
+                    <Image Source="{AppThemeBinding Light=TraceWIL, Dark=TraceWID}" HeightRequest="200"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="q5Output"
+                               Text=""
+                               HorizontalOptions="Start"/>
+                        <Label x:Name="q5Verdict"
+                               Text=""
+                               HorizontalOptions="End"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Button Text="Ipasa"
+                            Clicked="q5Submit"/>
+                        <Button Text="Burahin"
+                            Clicked="q5Clear"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyL, Dark=btnMagpatuloyD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.TestPage">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="{Binding CountDisplay}"
+                x:Name="lblCount"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <CollectionView x:Name="collectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Id}"/>
+                            <Label Text="{Binding RecordName}"/>
+                            <Label Text="{Binding RecordType}"/>
+                            <Label Text="{Binding RecordScore}"/>
+                            <Label Text="{Binding RecordDate}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Clicked="IncrementClicked"
+                    VerticalOptions="CenterAndExpand" 
+                    Text="Reset DB"/>
+            <Button Clicked="BtnClicked"
+                    VerticalOptions="CenterAndExpand" 
+                    Text="Button"/>
+            <Label/>
+            <StackLayout Padding="20">
+                <Label Text="Pass Activities"
+                       FontSize="25"/>
+                <Button Clicked="A1Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 1"/>
+                <Button Clicked="A2Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 2"/>
+                <Button Clicked="A3Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 3"/>
+                <Button Clicked="A4Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 4"/>
+                <Button Clicked="A5Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 5"/>
+                <Button Clicked="A6Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 6"/>
+                <Button Clicked="A7Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 7"/>
+                <Button Clicked="A8Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 8"/>
+                <Button Clicked="A9Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 9"/>
+                <Button Clicked="A10Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 10"/>
+                <Button Clicked="A11Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 11"/>
+                <Button Clicked="A12Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Activity 12"/>
+                <Label/>
+                <Label Text="Pass Quizzes"
+                       FontSize="25"/>
+                <Button Clicked="Q1Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Quiz 1"/>
+                <Button Clicked="Q2Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Quiz 2"/>
+                <Button Clicked="Q3Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Quiz 3"/>
+                <Button Clicked="Q4Clicked"
+                        VerticalOptions="CenterAndExpand"
+                        Text="Quiz 4"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

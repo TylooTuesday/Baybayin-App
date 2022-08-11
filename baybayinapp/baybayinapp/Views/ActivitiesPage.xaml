@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.ActivitiesPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Image Source="{AppThemeBinding Light=imgGawainL, Dark=imgGawainD}" VerticalOptions="Start" Margin="0, 20"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20">
+                <ImageButton x:Name="A1" Source="{AppThemeBinding Light=btnGawain1L, Dark=btnGawain1D}" VerticalOptions="CenterAndExpand" Clicked="Activity1Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A2" Source="btnGawain2G" VerticalOptions="CenterAndExpand" Clicked="Activity2Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A3" Source="btnGawain3G" VerticalOptions="CenterAndExpand" Clicked="Activity3Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A4" Source="btnGawain4G" VerticalOptions="CenterAndExpand" Clicked="Activity4Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A5" Source="btnGawain5G" VerticalOptions="CenterAndExpand" Clicked="Activity5Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A6" Source="btnGawain6G" VerticalOptions="CenterAndExpand" Clicked="Activity6Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A7" Source="btnGawain7G" VerticalOptions="CenterAndExpand" Clicked="Activity7Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A8" Source="btnGawain8G" VerticalOptions="CenterAndExpand" Clicked="Activity8Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A9" Source="btnGawain9G" VerticalOptions="CenterAndExpand" Clicked="Activity9Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A10" Source="btnGawain10G" VerticalOptions="CenterAndExpand" Clicked="Activity10Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A11" Source="btnGawain11G" VerticalOptions="CenterAndExpand" Clicked="Activity11Clicked" Margin="0, 0, 0, 5"/>
+                <ImageButton x:Name="A12" Source="btnGawain12G" VerticalOptions="CenterAndExpand" Clicked="Activity12Clicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

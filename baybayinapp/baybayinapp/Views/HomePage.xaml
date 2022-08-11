@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.HomePage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Image Source="{AppThemeBinding Light=HomeTextL, Dark=HomeTextD}" VerticalOptions="Start" Margin="0, 20"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <ImageButton Source="{AppThemeBinding Light=btnOCRL, Dark=btnOCRD}" BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}" HeightRequest="60" HorizontalOptions="End" VerticalOptions="CenterAndExpand" Clicked="OCRClicked" Margin="0, 0, 20, 0"/>
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20">
+                    <ImageButton Source="{AppThemeBinding Light=btnMatutoL, Dark=btnMatutoD}" VerticalOptions="CenterAndExpand" Clicked="LearnClicked" Margin="0, 0, 0, 5"/>
+                    <ImageButton Source="{AppThemeBinding Light=btnKasaysayanL, Dark=btnKasaysayanD}" VerticalOptions="CenterAndExpand" Clicked="HistoryClicked" Margin="0, 0, 0, 5"/>
+                    <ImageButton Source="{AppThemeBinding Light=btnProgresoL, Dark=btnProgresoD}" VerticalOptions="CenterAndExpand" Clicked="AchievementsClicked" Margin="0, 0, 0, 5"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="baybayinapp.Views.Achievements"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+                <Image Source="{AppThemeBinding Light=imgProgresoL.png, Dark=imgProgresoD}" VerticalOptions="Start" Margin="0, 20"/>
+            </StackLayout>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="   Pangkalahatan"
+                       FontSize="30"/>
+                <StackLayout Orientation="Horizontal" Margin="0, 0, 0, 70">
+                    <microcharts:ChartView x:Name="OverallChart"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HeightRequest="200"
+                                           WidthRequest="200"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text=""
+                               x:Name="OPercent"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="40"/>
+                        <Label Text=""
+                               x:Name="OTotal"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="20"/>
+                        <Label Text="Kabuuan: 16"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="20"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="   Mga Gawain"
+                       FontSize="30"/>
+                <StackLayout Orientation="Horizontal" Margin="0, 0, 0, 70">
+                    <microcharts:ChartView x:Name="ActivitiesChart"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HeightRequest="200"
+                                           WidthRequest="200"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text=""
+                               x:Name="APercent"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="40"/>
+                        <Label Text=""
+                               x:Name="ATotal"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="20"/>
+                        <Label Text="Kabuuan: 12"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="20"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="   Mga Pagsusulit"
+                       FontSize="30"/>
+                <StackLayout Orientation="Horizontal" Margin="0, 0, 0, 70">
+                    <microcharts:ChartView x:Name="QuizzesChart"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HeightRequest="200"
+                                           WidthRequest="200"/>
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text=""
+                               x:Name="QPercent"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="40"/>
+                        <Label Text=""
+                               x:Name="QTotal"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="20"/>
+                        <Label Text="Kabuuan: 4"
+                               HorizontalOptions="CenterAndExpand"
+                               FontSize="20"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="20, 20, 10, 10">
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

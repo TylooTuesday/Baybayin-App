@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Lesson10Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 10: Pagsasalin ng tagalog sa sulat na Baybayin"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ang bawat titik na katinig ay isang pantig na may kasamang patinig na a, e, i, o, at u. Halimbawa, ang titik na   ay hindi isang b lamang kundi dapat ay ba.  Kung isusulat ang salitang basa, dalawang titik lamang ang kailangan:"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜊᜐ"
+                   FontSize="40"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Ba-Sa (TAMA)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜊᜀᜐᜀ"
+                   FontSize="40"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Ba-A-Sa-A (MALI)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Kapag naman ang salita ay merong katinig na nagtatapos sa E/I at O/U. ito ay dapat gamitan ng kudlit, Kung ang katinig ay nagtatapos sa E/I ang kudlit ay dapat nasa taas at kapag ang katinig ay nagtatapos sa O/U ito dapat ay nasa baba. Kung ang salita naman ay katanig ngunit ito ay walang kasamang patinig ay dapat gamitin ang pamatay patinig sa pagsulat."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="HALIMBAWA:"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ᜃ"
+                        FontSize="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"/>
+                    <Label Text="ᜆᜒ"
+                        FontSize="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        TextColor="Red"/>
+                    <Label Text="ᜉᜓ"
+                        FontSize="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        TextColor="Red"/>
+                    <Label Text="ᜈ"
+                        FontSize="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"/>
+                    <Label Text="ᜈ᜔"
+                        FontSize="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        TextColor="Red"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="       Ka"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="+"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="Ti"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                        TextColor="Red"/>
+                    <Label Text="+"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="Pu"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                        TextColor="Red"/>
+                    <Label Text="+"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="Na"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="+"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="N"
+                        FontSize="18"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                        TextColor="Red"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyGawainL, Dark=btnMagpatuloyGawainD}" VerticalOptions="CenterAndExpand" Clicked="ActivityClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

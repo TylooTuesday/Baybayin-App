@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Lesson11Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 11: Salin Wika o Translation"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ang pagsasalin ng wikang banyaga sa baybayin karakter ay kinakailangan munang sumailalim sa pagsasalin sa wikang Filipino."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Halimbawa ang salitang ingles na 'City'"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Ang Baybayin ay walang anumang mga karakter na tumutugma sa mga titik na 'Ci'. May karakter para sa 't' at 'y', ngunit ito ay gumawa lamang ng apat na letrang sa salitang Ingles na mas mahaba sa Baybayin. Ang literal na pagsasalin ng salitang 'city' ay lunsod, kung kaya, ang lungsod ay dapat isalin sa Baybayin."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="City > Lungsod >"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜎᜓᜅ᜔ᜐᜓᜇ᜔"
+                   FontSize="50"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="MGA HALIMBAWA:"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="Apple > Mansanas >"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜋᜈ᜔ᜐᜈᜐ᜔"
+                   FontSize="50"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="Bread > Tinapay >"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜆᜒᜈᜉᜌ᜔"
+                   FontSize="50"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyGawainL, Dark=btnMagpatuloyGawainD}" VerticalOptions="CenterAndExpand" Clicked="ActivityClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#d8d467</Color>
+            
+            <!--
+                theme colors
+            -->
+            <Color x:Key="BGL">#ffffff</Color>
+            <Color x:Key="ThemeL1">#d8d467</Color>
+            <Color x:Key="ThemeL2">#fff2c4</Color>
+            <Color x:Key="ButtonL1">#e9e363</Color>
+            <Color x:Key="TextL">#505050</Color>
+            <Color x:Key="AccentL">#cb9629</Color>
+
+            <Color x:Key="BGD">#121212</Color>
+            <Color x:Key="ThemeD1">#707b23</Color>
+            <Color x:Key="ThemeD2">#272727</Color>
+            <Color x:Key="ButtonD1">#6b7128</Color>
+            <Color x:Key="TextD">#eeeeee</Color>
+            <Color x:Key="AccentD">#94a852</Color>
+
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding Light={StaticResource ButtonL1}, Dark={StaticResource ButtonD1}}"/>
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light={StaticResource TextL}, Dark={StaticResource TextD}}"/>
+            </Style>
+            <Style TargetType="ImageButton">
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" 
+                       Value="{AppThemeBinding Light={StaticResource TextL}, Dark={StaticResource TextD}}"/>
+            </Style>
+            <Style TargetType="Shell">
+                <Setter Property="BackgroundColor" Value="#ffc400"/>
+            </Style>
+            <!--
+            <Style TargetType="NavigationPage">
+                <Setter Property="BackgroundColor" Value="#ffc400"/>
+                <Setter Property="BarTextColor" Value="White"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="#303030"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#332196F3" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style> -->
+        </ResourceDictionary>        
+    </Application.Resources>
+</Application>

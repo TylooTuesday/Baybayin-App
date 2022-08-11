@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Lesson7Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 7: Mga Bantas"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ang mga bantas (punctuation) sa baybayin ay isa o dalawang guhit na patayo lamang, | o ||, ayon sa kagustuhan ng manunulat. Ang paggamit sa guhit ay katulad ng isang kuwit (comma) o tuldok (period)."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Danda: [ ᜵ ]"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="   Gamit nito ay (,)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="   Opsyonal na paggamit para sa Tutuldok (;)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="Kapid Danda: [ ᜶ ]"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="   Gamit nito ay tuldok (.)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="   tandang pananong (?)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="   tandang-paramdam (!)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="   Opsyonal na paggamit para sa Tutuldok (:)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Paano ba natin malalaman kung ang pangungusap ay patanong?"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Gumagamit tayo ng mga salitang ANO, SAAN, KAILAN, BAKIT, SINO, AT PAANO"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+
+                <Label Text="Paano kung wala ang mga ito?"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Gumagamit tayo ng salitang 'BA' upang malaman natin na isa itong tanong."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="MGA HALIMBAWA:"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜃᜓᜋᜁᜈ᜔ ᜃ ᜈ᜶"
+                   FontSize="50"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Kumain ka na. (PAUTOS)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="ᜃᜓᜋᜁᜈ᜔ ᜃ ᜈ ᜊ᜶"
+                   FontSize="50"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Kumain ka na ba? (PATANONG)"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyGawainL, Dark=btnMagpatuloyGawainD}" VerticalOptions="CenterAndExpand" Clicked="ActivityClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

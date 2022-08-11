@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Lesson6Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 6: Gamit ng Sinawali, Pamudpod, at Sabat"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ang pamudpod (   ᜴ ) ay ipinakilala ni Antoon Postma, ito ay ginagamit para sa mga pandulong katinig. Ang sinawali ( x ) o krus kudlit na pinalitan ng hugis ekis na virama naman ay ipinakilala ng mga Espanyol at ginamit sa paglalathala ng Doctrina Christiana, ito ay ginagamit para sa katinig na makapag-iisa. Ang Sabat ( + ) idinagdag ni Francisco Lopez noong 1620 at diyan din nagsimula ang paggamit ng Sinawali"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Paggamit ng Pamudpod"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Mapapansing ginamitan ang salitang 'tinig' ng pamudpod. Ito ay dahil sa ang titik 'g' ng salitang 'tinig' ay pandulong katinig"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ᜆᜒᜈᜒᜄ᜴"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="   Tinig"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Paggamit ng Sinawali"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Mapapansing ginamitan ang salitang 'krusada' ng hugis ekis o sinawali. Ito ay dahil ang titik 'k' sa salitang 'krusada' ay katinig na makapag-iisa."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label/>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="btxtKrusada.png" HeightRequest="70" VerticalOptions="Start" HorizontalOptions="Start"/>
+                    <Label Text="   Krusada"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Paggamit ng Sabat"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Mapapansing ginamitan ang salitang 'pag-ibig' ng hugis krus o sabat. Ito ay dahil ang dalawang titik 'G' sa salitang 'pag-ibig' ay katinig na makapag-iisa"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ᜉᜄ᜔ᜁᜊᜒᜄ᜔"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"/>
+                    <Label Text="   Pag-ibig"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyGawainL, Dark=btnMagpatuloyGawainD}" VerticalOptions="CenterAndExpand" Clicked="ActivityClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

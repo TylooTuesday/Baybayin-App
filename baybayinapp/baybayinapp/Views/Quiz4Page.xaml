@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz4Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Pagsusulit 4"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       I. Pagsasalin ng Tagalog sa Baybayin"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Alamin kung ano ang tamang pagsasalin sa Baybayin ng mga sumusunod na parirala."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Ikinagagalak kong makilala kayo" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" Content="ᜁᜃᜒᜈᜄᜄᜎᜃ᜔ ᜃᜓᜅ᜔ ᜋᜃᜒᜎᜎ ᜃ" />
+                    <RadioButton x:Name="q1" FontSize="30" Content="ᜁᜃᜒᜈᜄᜄᜎᜃ᜔ ᜃᜓᜅ᜔ ᜋᜃᜒᜎᜎ ᜃᜌᜓ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Ilang taon na ang lumipas" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" x:Name="q2" Content="ᜁᜎᜅ᜔ ᜆᜂᜈ᜔ ᜈ ᜀᜅ᜔ ᜎᜓᜋᜒᜉᜐ᜔" />
+                    <RadioButton FontSize="30" Content="ᜁᜎᜅ᜔ ᜀᜇᜏ᜔ ᜈ ᜀᜅ᜔ ᜎᜓᜋᜒᜉᜐ᜔" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Huwag kang umiyak" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" x:Name="q3" Content="ᜑᜓᜏᜄ᜔ ᜃᜅ᜔ ᜂᜋᜒᜌᜃ᜔" />
+                    <RadioButton FontSize="30" Content="ᜑᜓᜏᜄ᜔ ᜃᜅ᜔ ᜆᜓᜋᜏ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Hindi ko maintindihan" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" Content="ᜑᜒᜈ᜔ᜇᜒ ᜃᜓ ᜋᜎᜒᜋᜓᜆᜈ᜔" />
+                    <RadioButton FontSize="30" x:Name="q4" Content="ᜑᜒᜈ᜔ᜇᜒ ᜃᜓ ᜋᜁᜈ᜔ᜆᜒᜈ᜔ᜇᜒᜑᜈ᜔" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Nawawala ang aking pera" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" x:Name="q5" Content="ᜈᜏᜏᜎ ᜀᜅ᜔ ᜀᜃᜒᜅ᜔ ᜉᜒᜇ" />
+                    <RadioButton FontSize="30" Content="ᜈᜏᜏᜎ ᜀᜅ᜔ ᜀᜃᜒᜅ᜔ ᜉᜐᜒᜈ᜔ᜐ᜔ᜌ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="6." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Hindi ko malimutan" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" x:Name="q6" Content="ᜑᜒᜈ᜔ᜇᜒ ᜃᜓ ᜋᜎᜒᜋᜓᜆᜈ᜔" />
+                    <RadioButton FontSize="30" Content="ᜑᜒᜈ᜔ᜇᜒ ᜃᜓ ᜋᜁᜈ᜔ᜆᜒᜈ᜔ᜇᜒᜑᜈ᜔" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="7." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Gusto ko maglaro" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" Content="ᜄᜓᜐ᜔ᜆᜓ ᜋᜓ ᜋᜄ᜔ᜎᜇᜓ" />
+                    <RadioButton FontSize="30" x:Name="q7" Content="ᜄᜓᜐ᜔ᜆᜓ ᜃᜓ ᜋᜄ᜔ᜎᜇᜓ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="8." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Kumain na tayo" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" x:Name="q8" Content="ᜃᜓᜋᜁᜈ᜔ ᜈ ᜆᜌᜓ" />
+                    <RadioButton FontSize="30" Content="ᜃᜓᜋᜁᜈ᜔ ᜈ ᜃᜌᜓ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="9." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Iligpit mo ang mga kalat" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" Content="ᜁᜆᜉᜓᜈ᜔ ᜋᜓ ᜀᜅ᜔ ᜋ᜔ᜄ ᜃᜎᜆ᜔" />
+                    <RadioButton FontSize="30" x:Name="q9" Content="ᜁᜎᜒᜄ᜔ᜉᜒᜆ᜔ ᜋᜓ ᜀᜅ᜔ ᜋ᜔ᜄ ᜃᜎᜆ᜔" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="10." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="Sabihin mo na mahal mo ako" 
+                           FontSize="18"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="30" x:Name="q10" Content="ᜐᜊᜒᜑᜒᜈ᜔ ᜋᜓ ᜈ ᜋᜑᜎ᜔ ᜋᜓ ᜀᜃᜓ" />
+                    <RadioButton FontSize="30" Content="ᜐᜊᜒᜑᜒᜈ᜔ ᜋᜓ ᜈ ᜀᜌᜏ᜔ ᜋᜓ ᜀᜃᜓ" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnSusunodL, Dark=btnSusunodD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.SplashPage"
+             BackgroundImageSource="{AppThemeBinding Light=SplashBGL.png, Dark=SplashBGD.png}"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                <!-- top controls -->
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="20,20,20,20">
+                <Image Source="{AppThemeBinding Light=SplashTextL.png, Dark=SplashTextD.png}" VerticalOptions="Center"/>
+                <Button VerticalOptions="Center" Text="MAGSIMULA" Clicked="Magsimula"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                <Label HorizontalOptions="CenterAndExpand" TextColor="Black" Text="©2022"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35364802-08D3-4314-8C9A-23705A8808CC}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{89a4fe7c-635d-49c9-8d8c-5cd363c0d68d}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>baybayinapp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>baybayinapp.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <BundleResource Include="Resources\icon_about.png" />
+    <BundleResource Include="Resources\icon_about%402x.png" />
+    <BundleResource Include="Resources\icon_about%403x.png" />
+    <BundleResource Include="Resources\icon_feed.png" />
+    <BundleResource Include="Resources\icon_feed%402x.png" />
+    <BundleResource Include="Resources\icon_feed%403x.png" />
+    <BundleResource Include="Resources\xamarin_logo.png" />
+    <BundleResource Include="Resources\xamarin_logo%402x.png" />
+    <BundleResource Include="Resources\xamarin_logo%403x.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microcharts.Forms">
+      <Version>0.9.5.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.8.116</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.CommunityToolkit">
+      <Version>2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Controls.SignaturePad.Forms">
+      <Version>3.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\baybayinapp\baybayinapp.csproj">
+      <Project>{704EB998-4B64-495E-B942-39BEF240FB8A}</Project>
+      <Name>baybayinapp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hometext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SplashBGD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SplashBGL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SplashTextL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SplashTextD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryBaybayinTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Addiciones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeTextL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeTextD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\qqqqqqqqqqqq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtBungi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtDehado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtKrusada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin7D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin9D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin10D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin11D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin12D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin8D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin8L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin9L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin10L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin11L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin12L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin7L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnKasaysayanL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMagpatuloyGawainL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMatutoL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMgaAralinL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMgaGawainL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulitL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnKasaysayanD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMagpatuloyGawainD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMatutoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMgaAralinD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMgaGawainD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulitD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin3L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin4L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin5L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin6L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin5D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin6D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin4D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtMagkita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtPakisulat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtPasensya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtPinto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtMagsumikap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtSabatB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnBumalikL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnBumalikD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgCross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain4D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain5D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain6D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain7D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain8D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain9D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain10D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain11D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain12D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain5L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain6L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain7L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain8L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain9L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain10L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain11L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain12L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain3L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain4L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit4L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit3L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit4D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtMensahe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1950_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1620.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1950_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1914.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1896.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1593_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1593_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1593_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1580.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img300BC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1590_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img1590_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtTrabaho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtIlog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtKalokohan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtKarate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MatutoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KasaysayanD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MatutoL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KasaysayanL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMagpatuloyD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnMagpatuloyL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnSusunodD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnSusunodL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin6G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin7G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin8G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin9G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin10G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin11G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin12G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin1G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin2G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin3G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin4G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnAralin5G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain5G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain6G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain7G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain8G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain9G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain10G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain11G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain12G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain1G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain2G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain3G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnGawain4G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit4G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit1G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit2G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnPagsusulit3G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgMatutoBaybayinL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgMatutoBaybayinD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\A.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EI.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\OU.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Aw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DARA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NGA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\YA.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BI.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HU.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NI.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\YU.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgProgresoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgProgresoL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnOCRD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnOCRL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnProgresoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnProgresoL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgKasaysayanD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgKasaysayanL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KP.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KS.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KV.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LP.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LS.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LV.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HP.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HS.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HV.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtKV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtLV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btxtHV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceTAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceWAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceWAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceYAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceYAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceBAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceBAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceDARAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceDARAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceEID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceEIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceGAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceGAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceHAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceHAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceKAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceKAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceLAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceLAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceMAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceMAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceNAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceNAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceNGAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceNGAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceOUD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceOUL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TracePAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TracePAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceSAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceSAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceTAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgTraceDaRa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceWIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceGIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TracePUL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceSUL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceTIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceWID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceGID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TracePUD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceSUD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceTID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceNGPD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceNGPL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TracePVD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TracePVL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceTPD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceTPL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceDVD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceDVL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceMSD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TraceMSL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgPagsusulitL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgAralinD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgAralinL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgGawainD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgGawainL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgPagsusulitD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\imgGHat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnCamL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\btnCamD.png" />
+  </ItemGroup>
+</Project>

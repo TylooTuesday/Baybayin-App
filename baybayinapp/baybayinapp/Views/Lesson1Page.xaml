@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="baybayinapp.Views.Lesson1Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 1: Ang Baybayin (B17+)"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ang baybayin ay itinuturing na sinaunang pamamaraan ng pagsulat ng mga katutubong Tagalog. Binubuo ito ng 17 simbolo o karakter na kumakatawan sa mga titik: 14 katinig at 3 patinig"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Ang Semi Modern Baybayin (B17+) ay katulad din ng Tradisyunal na Baybayin ngunit sa B17+ mayroon ng Virama o pamatay patinig. Kung kayat mas naiintindihan at mas buo ang salita."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Mga Patinig:"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                    <Label Text="A - ᜀ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="StartAndExpand"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="E / I - ᜁ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedEI"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidEI"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="O / U - ᜂ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedOU"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidOU"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnSusunodL, Dark=btnSusunodD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

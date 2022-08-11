@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz3Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Pagsusulit 3"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       I. Mga Bantas sa Baybayin"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Alamin kung patanong o padamdam ang mga sumusunod."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜋᜄᜈ᜔ᜇᜅ᜔ ᜀᜇᜏ᜔᜶" 
+                           FontSize="30"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Patanong" />
+                    <RadioButton x:Name="q1" Content="Padamdam" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜁᜎᜅ᜔ ᜆᜂᜈ᜔ ᜃ ᜈ᜶" 
+                           FontSize="30"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q2" Content="Patanong" />
+                    <RadioButton Content="Padamdam" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜃᜁᜎᜈ᜔ ᜀᜅ᜔ ᜁᜌᜓᜅ᜔ ᜃᜀᜇᜏᜈ᜔᜶" 
+                           FontSize="30"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q3" Content="Patanong" />
+                    <RadioButton Content="Padamdam" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜋᜄᜈ᜔ᜇᜅ᜔ ᜄᜊᜒ ᜐ ᜁᜌᜓ᜶" 
+                           FontSize="30"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Patanong" />
+                    <RadioButton x:Name="q4" Content="Padamdam" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜃᜓᜋᜁᜈ᜔ ᜈ ᜃᜌᜓ᜶" 
+                           FontSize="30"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q5" Content="Patanong" />
+                    <RadioButton Content="Padamdam" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       II. Mga salitang may gitling"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Alamin kung TAMA o MALI ang paggamit ng gitling sa mga sumusunod na salita sa Baybayin."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="6." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜉᜇᜒᜉᜇᜒᜑᜓ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q6" Content="Tama" />
+                    <RadioButton Content="Mali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="7." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜎᜉᜒᜆᜎᜉᜒᜆ᜔" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Tama" />
+                    <RadioButton x:Name="q7" Content="Mali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="8." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜋᜐᜌᜅ᜔ᜋᜐᜌ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q8" Content="Tama" />
+                    <RadioButton Content="Mali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="9." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜇᜎ᜔ᜇᜎᜏ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Tama" />
+                    <RadioButton x:Name="q9" Content="Mali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="10." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜁᜐᜁᜐ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q10" Content="Tama" />
+                    <RadioButton Content="Mali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       III. Mga Daglat sa Baybayin"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Alamin kung alin ang tamang pagsalin ng Daglat sa Baybayin."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="11." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="DOH" 
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="40" Content="ᜊ᜔ᜁᜇ᜔" />
+                    <RadioButton FontSize="40" Content="ᜉ᜔ᜊ᜔ᜊ᜔" />
+                    <RadioButton x:Name="q11" FontSize="40" Content="ᜇ᜔ᜂᜑ᜔" />
+                    <RadioButton FontSize="40" Content="ᜈ᜔ᜄ᜔ᜂ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="12." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="BIR" 
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q12" FontSize="40" Content="ᜊ᜔ᜁᜇ᜔" />
+                    <RadioButton FontSize="40" Content="ᜉ᜔ᜊ᜔ᜊ᜔" />
+                    <RadioButton FontSize="40" Content="ᜇ᜔ᜂᜑ᜔" />
+                    <RadioButton FontSize="40" Content="ᜈ᜔ᜄ᜔ᜂ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="13." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="PBB" 
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="40" Content="ᜊ᜔ᜁᜇ᜔" />
+                    <RadioButton x:Name="q13" FontSize="40" Content="ᜉ᜔ᜊ᜔ᜊ᜔" />
+                    <RadioButton FontSize="40" Content="ᜇ᜔ᜂᜑ᜔" />
+                    <RadioButton FontSize="40" Content="ᜈ᜔ᜄ᜔ᜂ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="14." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="NGO" 
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="40" Content="ᜊ᜔ᜁᜇ᜔" />
+                    <RadioButton FontSize="40" Content="ᜉ᜔ᜊ᜔ᜊ᜔" />
+                    <RadioButton FontSize="40" Content="ᜇ᜔ᜂᜑ᜔" />
+                    <RadioButton x:Name="q14" FontSize="40" Content="ᜈ᜔ᜄ᜔ᜂ" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="15." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="LGU" 
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton FontSize="40" Content="ᜇ᜔ᜂᜑ᜔" />
+                    <RadioButton FontSize="40" Content="ᜐ᜔ᜉ᜔ᜁ" />
+                    <RadioButton FontSize="40" Content="ᜇ᜔ᜁᜁ" />
+                    <RadioButton x:Name="q15" FontSize="40" Content="ᜎ᜔ᜄ᜔ᜂ" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyL, Dark=btnMagpatuloyD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

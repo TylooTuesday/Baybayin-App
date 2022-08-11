@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz1FailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start" Padding="20">
+
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="40">
+                <Image Source="imgCross.png" VerticalOptions="Start" Margin="20"/>
+                <Label Text="May mali sa iyong mga sagot."
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"/>
+                <Label Text="Bumalik at itama lahat ng iyong sagot upang makapag-patuloy sa susunod na aralin."
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20">
+                <ImageButton Source="{AppThemeBinding Light=btnBumalikL, Dark=btnBumalikD}" VerticalOptions="CenterAndExpand" Clicked="BackClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

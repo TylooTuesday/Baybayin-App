@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Lesson5Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 5: Gamit ng Kudlit"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ang solidong kudlit na marka ( • ) ay ginagamit bilang representasyon ng mga mataas na patinig /I/ at /U/. Ang kalahating kudlit o hollow kudlit na marka ( o ) ay ginagamit bilang representasyon ng mababang pantig  /E/ at /O/. "
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="       Kung ang kudlit ay nasa itaas ng titik, ang pagbigkas ay I o E. "
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="MGA HALIMBAWA:"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜐ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                        <Label Text="ᜇᜒ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="ᜎᜒ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Sa"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="ri"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="li"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜉᜒ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="ᜆ ᜐ᜔"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Pi"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="tas"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜊᜒ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="ᜆ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                        <Label Text="ᜏ ᜈ᜔"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Bi"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="ta"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="wan"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="       Kung ang kudlit ay nasa ibaba, U o O ang dapat bigkasin."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="MGA HALIMBAWA:"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜉᜓ ᜎᜓ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Pu"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="lo"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜋ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                        <Label Text="ᜄᜓ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="ᜎᜓ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Ma"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="gu"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="lo"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜃ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                        <Label Text="ᜊ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                        <Label Text="ᜌᜓ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Ka"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="ba"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="yo"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Paggamit ng Solid Kudlit"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Mapapansing ginamitan ng solid kudlit mark ang salitang 'bungi'. Ito ay dahil may taglay itong mataas na patinig o 'high vowels'."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/> 
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜊᜓ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="ᜅᜒ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Bu"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="ngi"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                           TextColor="Red"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="ᜆᜓ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="ᜋ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                        <Label Text="ᜏ"
+                            FontSize="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="   Tu"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"
+                            TextColor="Red"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="ma"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                        <Label Text="wa"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="       "
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Rectangle BackgroundColor="#7f7f7f" HeightRequest="2" HorizontalOptions="Fill" Margin="0, 0, 0, 20"/>
+                <Label Text="Paggamit ng Hollow Kudlit"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Mapapansing ginamitan ng hallow kudlit mark ang salitang 'dehado'. Ito ay dahil may taglay itong mababang patinig o 'mid vowels'."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="btxtDehado.png" HeightRequest="60" VerticalOptions="Start" HorizontalOptions="Start"/>
+                    <Label Text="   De"
+                       TextColor="Red"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                    <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                    <Label Text="ha"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                    <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                    <Label Text="do"
+                       TextColor="Red"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="btxtMensahe.png" HeightRequest="60" VerticalOptions="Start" HorizontalOptions="Start"/>
+                    <Label Text="   Me"
+                       TextColor="Red"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                    <Label Text="n"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                    <Label Text="-"
+                            FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                    <Label Text="sa"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                    <Label Text="-"
+                            FontSize="18"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Start"/>
+                    <Label Text="he"
+                       TextColor="Red"
+                       FontSize="18"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyGawainL, Dark=btnMagpatuloyGawainD}" VerticalOptions="CenterAndExpand" Clicked="ActivityClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

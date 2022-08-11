@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="baybayinapp.Views.Lesson1Page2"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Aralin 1: Ang Baybayin (B17+)"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="Mga Katinig: Ba - Ma"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ba - ᜊ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedBA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidBA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ka - ᜃ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedKA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidKA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Da / Ra - ᜇ"
+                       FontSize="40"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedDARA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidDARA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ga - ᜄ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedGA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidGA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ha - ᜑ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedHA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidHA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="La - ᜎ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedLA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidLA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+                <Label Text="       "
+                   FontSize="60"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ma - ᜋ"
+                       FontSize="50"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Panoorin"
+                            Clicked="ClickedMA"
+                            Margin="0, 0, 20, 0"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <xct:MediaElement x:Name="vidMA"
+                                  AutoPlay="True"
+                                  ShowsPlaybackControls="False"
+                                  MediaEnded="MediaEnded"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnSusunodL, Dark=btnSusunodD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz2Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Pagsusulit 2"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Ikaunang Parte"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Alamin kung Abugida o Hindi Abugida ang mga sumusunod na karakter sa baybayin."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜆ᜔" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Abugida" />
+                    <RadioButton x:Name="q1" Content="Hindi Abugida" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜐ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q2" Content="Abugida" />
+                    <RadioButton Content="Hindi Abugida" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜊ᜔" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Abugida" />
+                    <RadioButton x:Name="q3" Content="Hindi Abugida" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜉ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q4" Content="Abugida" />
+                    <RadioButton Content="Hindi Abugida" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜎ᜔" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Abugida" />
+                    <RadioButton x:Name="q5" Content="Hindi Abugida" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Ikalawang Parte"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       Alamin kung ano ang nilalaman ng mga sumusunod na salita sa baybayin."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="6." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜐᜏᜒ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q6" Content="Solid-Kudlit" />
+                    <RadioButton Content="Hollow-Kudlit" />
+                    <RadioButton Content="Sabat" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="7." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Image Source="btxtKarate.png" HeightRequest="50" VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Solid-Kudlit" />
+                    <RadioButton x:Name="q7" Content="Hollow-Kudlit" />
+                    <RadioButton Content="Sabat" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="8." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Image Source="btxtTrabaho.png" HeightRequest="50" VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Solid-Kudlit" />
+                    <RadioButton Content="Sabat" />
+                    <RadioButton x:Name="q8" Content="Sinawali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="9." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜑᜓᜋᜒᜄ" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q9" Content="Solid-Kudlit" />
+                    <RadioButton Content="Hollow-Kudlit" />
+                    <RadioButton Content="Sinawali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="10." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜐᜓᜋᜃᜌ᜔" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q10" Content="Solid-Kudlit" />
+                    <RadioButton Content="Hollow-Kudlit" />
+                    <RadioButton Content="Sinawali" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="11." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜁᜃᜏ᜴" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q11" Content="Pamudpod" />
+                    <RadioButton Content="Sinawali" />
+                    <RadioButton Content="Sabat" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="12." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Image Source="btxtIlog.png" HeightRequest="50" VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Pamudpod" />
+                    <RadioButton x:Name="q12" Content="Sinawali" />
+                    <RadioButton Content="Sabat" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="13." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜉᜐᜒᜃᜆ᜔" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Pamudpod" />
+                    <RadioButton Content="Sinawali" />
+                    <RadioButton x:Name="q13" Content="Sabat" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="14." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜋᜁᜆᜒᜋ᜴" 
+                           FontSize="40"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q14" Content="Pamudpod" />
+                    <RadioButton Content="Sinawali" />
+                    <RadioButton Content="Sabat" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="15." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Image Source="btxtKalokohan.png" HeightRequest="50" VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Pamudpod" />
+                    <RadioButton Content="Sinawali" />
+                    <RadioButton x:Name="q15" Content="Sabat" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyL, Dark=btnMagpatuloyD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

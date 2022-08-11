@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Quiz1Page"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Baybayin App">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Pagsusulit 1"
+                   FontSize="25"
+                   Padding="20, 20, 10, 10"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <StackLayout Padding="20, 20, 10, 10">
+                <Label Text="       Suriin at kilalanin ang mga susunod na karakter ng Baybayin at piliin ang tamang sagot."
+                   FontSize="18"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜊ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Se/Si" />
+                    <RadioButton x:Name="q1" Content="Ba" />
+                    <RadioButton Content="Pa" />
+                    <RadioButton Content="Ge/Gi" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="2." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜀ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="We" />
+                    <RadioButton Content="O/U" />
+                    <RadioButton x:Name="q2" Content="A" />
+                    <RadioButton Content="Ka" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="3." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜇ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Ho/Hu" />
+                    <RadioButton x:Name="q3" Content="Da/Ra" />
+                    <RadioButton Content="Wa" />
+                    <RadioButton Content="U" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="4." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜄ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="E/I" />
+                    <RadioButton Content="He/Hi" />
+                    <RadioButton x:Name="q4" Content="Ga" />
+                    <RadioButton Content="Ke/Ki" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="5." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜃᜒ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q5" Content="Ke/Ki" />
+                    <RadioButton Content="Lo/Lu" />
+                    <RadioButton Content="Ka" />
+                    <RadioButton Content="Si/Se" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="6." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜋ᜔" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="No/Nu" />
+                    <RadioButton x:Name="q6" Content="M" />
+                    <RadioButton Content="Mo/Mu" />
+                    <RadioButton Content="Ga" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="7." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜈᜒ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Wa" />
+                    <RadioButton Content="E/I" />
+                    <RadioButton Content="Go/Gu" />
+                    <RadioButton x:Name="q7" Content="Ne/Ni" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="8." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜅ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="So/Su" />
+                    <RadioButton x:Name="q8" Content="Nga" />
+                    <RadioButton Content="Sa" />
+                    <RadioButton Content="He/Hi" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="9." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜉ᜔" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Pe/Pi" />
+                    <RadioButton Content="S" />
+                    <RadioButton Content="Ne/Ni" />
+                    <RadioButton x:Name="q9" Content="P" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="10." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜆᜒ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="We/Wi" />
+                    <RadioButton Content="Sa" />
+                    <RadioButton Content="Ge/Gi" />
+                    <RadioButton x:Name="q10" Content="Te/Ti" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="11." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜏᜒ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Ya" />
+                    <RadioButton Content="Ge/Gi" />
+                    <RadioButton Content="Ta" />
+                    <RadioButton x:Name="q11" Content="We/Wi" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="12." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜌᜓ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="Da" />
+                    <RadioButton Content="Ka" />
+                    <RadioButton Content="Pe/Pi" />
+                    <RadioButton x:Name="q12" Content="Yo/Yu" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="13." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜑᜒ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="We/Wi" />
+                    <RadioButton Content="Sa" />
+                    <RadioButton x:Name="q13" Content="He/Hi" />
+                    <RadioButton Content="Mo/Mu" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="14." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜎ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="G" />
+                    <RadioButton Content="De/Di" />
+                    <RadioButton x:Name="q14" Content="La" />
+                    <RadioButton Content="Sa" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="15." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜁ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton Content="La" />
+                    <RadioButton Content="Bo/Bu" />
+                    <RadioButton x:Name="q15" Content="E/I" />
+                    <RadioButton Content="Wa" />
+                </StackLayout>
+                <Label Text="       "
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="16." 
+                           FontSize="18"
+                           VerticalOptions="Center"/>
+                        <Label Text="ᜂ" 
+                           FontSize="80"
+                           VerticalOptions="Start"/>
+                    </StackLayout>
+                    <RadioButton x:Name="q16" Content="O/U" />
+                    <RadioButton Content="Wa" />
+                    <RadioButton Content="Se/Si" />
+                    <RadioButton Content="Ra" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource ThemeL2}, Dark={StaticResource ThemeD2}}" Padding="20, 20, 20, 10" Margin="20, 100, 20, 20">
+                <ImageButton Source="{AppThemeBinding Light=btnMagpatuloyL, Dark=btnMagpatuloyD}" VerticalOptions="CenterAndExpand" Clicked="ProceedClicked" Margin="0, 0, 0, 5"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

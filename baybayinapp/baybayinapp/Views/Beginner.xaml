@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="baybayinapp.Views.Beginner"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BGL}, Dark={StaticResource BGD}}"
+             Shell.FlyoutBehavior="Disabled"
+             Title="Beginner">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button VerticalOptions="CenterAndExpand" Text="Lesson 1" Clicked="Lesson1Clicked"/>
+                <Button VerticalOptions="CenterAndExpand" Text="Lesson 1" Clicked="Lesson2Clicked"/>
+                <Button VerticalOptions="CenterAndExpand" Text="Lesson 1" Clicked="Lesson3Clicked"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="End">
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
